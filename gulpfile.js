@@ -4,6 +4,9 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const ghPages = require('gulp-gh-pages');
+const options = { 
+    remoteUrl: "https://github.com/ahmedaaziz/Ahmed-abdelaziz.git",
+    branch: "master"};
 
 
 // tasks
@@ -23,7 +26,7 @@ function style() {
 
 function deploy(){
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages(options));
 
 }
 
