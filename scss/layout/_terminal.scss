@@ -1,0 +1,112 @@
+.terminal {
+	height: 100vh;
+    font-family: $montserrat;
+	border:10px solid #cacaca;
+	position: relative;
+	width: 100%;
+	background: gray url('/images/bg-grey.png') repeat 0 0  ;
+	box-sizing: border-box;
+	-webkit-animation: slide 20s linear infinite;
+	animation: slide 20s linear infinite;
+
+
+	// .animated-img {
+	// 	position: absolute;
+	// 	max-width: 30px;
+	// 	-webkit-animation: float 20s linear infinite;
+	// 	animation: float 20s linear infinite;
+	// }
+	// 		.ng {
+	// 			bottom: 50%;
+	// 			right: 40px;
+		
+	// 		}
+		
+	// 		.v {
+	// 			bottom: 40%;
+	// 			right: 10px;
+	// 		}
+	// 		.js {
+	// 			bottom: 0;
+	// 			right: 10px;
+	// 		}
+		// @keyframes float {
+		// 	0% {
+		// 		transform:rotate(10deg) translateY(0);
+		// 	}
+		// 	50% {
+		// 		transform:rotate(5deg) translateY(-10px);
+	
+		// 	}
+		// 	100% {
+		// 		transform:rotate(10deg) translateY(0);
+		// 	}
+		// }
+		@keyframes slide {
+			from { background-position: 0 0; }
+			to { background-position: -400px 0; }
+		}
+	
+    .content {
+		color:$bright;
+		max-width: 600px;
+		margin: 0 auto;
+		background: $terminal_color;
+		max-height: 550px;
+		height: 60vh;
+		overflow: auto;
+		margin-top: 30px;
+		border-radius: 4px 4px 0 0 ;
+        #breakLines {
+			font-family: $montserrat !important;
+            font-size: $normal;
+            line-height: 28px;
+		}
+		
+		.title {
+			background:#d4d5d5;
+			padding: 10px;
+			border-radius:4px 4px 0 0;
+			border-bottom: 1px solid #000;
+
+
+			.circle  {
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				display: inline-block;
+				margin-right: 5px;
+						}
+
+			.red {background: #fc615d;}
+			.green {background: #35c94a}
+			.yellow {background: #fdbc40;}
+			
+
+
+
+		}
+		.content-text {
+			padding: 15px;
+			.contact-links {
+				list-style: none;
+				display: inline-block;
+				text-decoration: none;
+				color:$bright;
+		
+			}
+		}
+    
+	}
+	
+	
+	.mail {color:rgb(94, 240, 89)}
+	.latest-updated {font-size: 12px;font-style: italic}
+	.text-underlined {text-decoration: underline;}
+}
+
+@media only screen and (max-width:768px) {
+	.bg {
+		padding: 0 15px;
+	}
+}
