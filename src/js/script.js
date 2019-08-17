@@ -18,4 +18,4 @@ new TypeIt('#breakLines', {
            ],
   speed: 50,
   waitUntilVisible: true
-}).go();
+}).go();  

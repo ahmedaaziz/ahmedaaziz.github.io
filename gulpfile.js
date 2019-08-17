@@ -3,10 +3,11 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-const ghPages = require('gulp-gh-pages');
-const options = { 
-    remoteUrl: "https://github.com/ahmedaaziz/Ahmed-abdelaziz.git",
-    branch: "master"};
+const minify = require('gulp-minify');
+const deploy = require('gulp-gh-pages');
+// const options = { 
+//     remoteUrl: "https://github.com/ahmedaaziz/ahmedaaziz.github.io.git",
+//     branch: "master"};
 
 
 // tasks
@@ -15,7 +16,7 @@ const options = {
 
 function style() {
     //1.where is my scss file
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src('./src/scss/**/*.scss')
     //2.pass file through sass compiler
     .pipe(sass())
     //3.where do i save the compiled css
@@ -24,13 +25,28 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-function deploy(){
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages(options));
+  gulp.task('deploy', function () {
+    return gulp.src("./prod/**/*")
+      .pipe(deploy({ 
+        remoteUrl: "https://github.com/ahmedaaziz/ahmedaaziz.github.io.git",
+        branch: "master"
+      }))
+  });
+
+
+// function deploy(){
+//   return gulp.src('./dist/**/*')
+//     .pipe(ghPages(options));
+
+// }
+
+function compress(){
+    return gulp.src('./src/js/**/*.js')
+        .pipe(minify())
+        .pipe(gulp.dest('./dist/js'))
+            .pipe(browserSync.stream());
 
 }
-
-
 
 function watch() {
     browserSync.init({
@@ -38,10 +54,11 @@ function watch() {
             baseDir: './'
         }
     });
-    gulp.watch('./scss/**/*.scss',style).on('change',browserSync.reload);
+    gulp.watch('./src/scss/**/*.scss',style).on('change',browserSync.reload);
+    gulp.watch('./src/js/**/*.js',compress).on('change',browserSync.reload);
     gulp.watch('./*.html').on('change',browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change',browserSync.reload);
 }
 exports.style = style;
-exports.deploy = deploy;
+exports.compress = compress;
 exports.watch = watch;
+// exports.deploy = deploy;

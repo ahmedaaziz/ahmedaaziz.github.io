@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.4",
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
     "node-sass": "^4.12.0"
   },
   "scripts": {
@@ -25,10 +27,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahmedaaziz/Ahmed-abdelaziz.git"
+    "url": "git+https://github.com/ahmedaaziz/ahmedaaziz.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/ahmedaaziz/Ahmed-abdelaziz/issues"
+    "url": "https://github.com/ahmedaaziz/ahmedaaziz.github.io/issues"
   },
-  "homepage": "github.com/ahmedaaziz/Ahmed-abdelaziz#readme"
+  "homepage": "https://github.com/ahmedaaziz/ahmedaaziz.github.io#readme"
 }
