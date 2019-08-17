@@ -26,7 +26,7 @@ function style() {
 }
 
   gulp.task('deploy', function () {
-    return gulp.src("./prod/**/*")
+    return gulp.src("./src/**/*")
       .pipe(deploy({ 
         remoteUrl: "https://github.com/ahmedaaziz/ahmedaaziz.github.io.git",
         branch: "master"
