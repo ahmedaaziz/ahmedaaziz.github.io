@@ -51,10 +51,6 @@
 		color:$bright;
 		max-width: 600px;
 		margin: 0 auto;
-		background: $terminal_color;
-		max-height: 550px;
-		height: 60vh;
-		overflow: auto;
 		margin-top: 30px;
 		border-radius: 4px 4px 0 0 ;
         #breakLines {
@@ -68,26 +64,30 @@
 			padding: 10px;
 			border-radius:4px 4px 0 0;
 			border-bottom: 1px solid #000;
-
-
+			
+			
 			.circle  {
 				width: 15px;
 				height: 15px;
 				border-radius: 50%;
 				display: inline-block;
 				margin-right: 5px;
-						}
-
+			}
+			
 			.red {background: #fc615d;}
 			.green {background: #35c94a}
 			.yellow {background: #fdbc40;}
 			
-
-
-
+			
+			
+			
 		}
 		.content-text {
 			padding: 15px;
+			background: $terminal_color;
+			max-height: 550px;
+			height: 60vh;
+			overflow: auto;
 			.contact-links {
 				list-style: none;
 				display: inline-block;

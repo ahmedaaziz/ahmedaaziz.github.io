@@ -628,10 +628,6 @@ template {
     color: #fff;
     max-width: 600px;
     margin: 0 auto;
-    background: #3A3A3A;
-    max-height: 550px;
-    height: 60vh;
-    overflow: auto;
     margin-top: 30px;
     border-radius: 4px 4px 0 0; }
     .terminal .content #breakLines {
@@ -656,7 +652,11 @@ template {
       .terminal .content .title .yellow {
         background: #fdbc40; }
     .terminal .content .content-text {
-      padding: 15px; }
+      padding: 15px;
+      background: #3A3A3A;
+      max-height: 550px;
+      height: 60vh;
+      overflow: auto; }
       .terminal .content .content-text .contact-links {
         list-style: none;
         display: inline-block;
