@@ -715,7 +715,8 @@ header nav .navbar-nav .nav-item .nav-link {
 .services .service {
   padding: 15px;
   background: #fff;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  min-height: 300px; }
 
 .services .service p {
   font-size: 1em;
