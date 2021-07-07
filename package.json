@@ -1,37 +1,26 @@
 {
-  "name": "portfolio",
+  "name": "new-portfolio-2021",
   "version": "1.0.0",
-  "description": "new try to build a better workflow",
+  "description": "My new portfolio in 2021",
   "main": "index.js",
-  "dependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "lodash.template": "^4.5.0"
-  },
-  "devDependencies": {
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-minify": "^3.1.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.12.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ahmed",
-  "license": "MIT",
-  "keywords": [
-    "html",
-    "js",
-    "scss",
-    "gulp"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahmedaaziz/ahmedaaziz.github.io.git"
+  "author": "Ahmed Abdelaziz",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "swiper": "^6.5.4"
   },
-  "bugs": {
-    "url": "https://github.com/ahmedaaziz/ahmedaaziz.github.io/issues"
-  },
-  "homepage": "https://github.com/ahmedaaziz/ahmedaaziz.github.io#readme"
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.2.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-debug": "^4.0.0",
+    "gulp-terser": "^2.0.1"
+  }
 }

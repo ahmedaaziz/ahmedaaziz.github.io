@@ -1,0 +1,29 @@
+header { 
+    font-size: $font-size-base;
+    color: $dark;
+    // background: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 1px solid #eaeaea;
+    background:$grey;
+    nav {
+        .navbar-brand {
+            font-family: $font-family-secondary;
+            font-size: 18px;
+        }
+        .navbar-nav {
+            .nav-item {
+                margin: 0 35px;
+                .nav-link { 
+                    font-weight: bold;
+                    color: $dark;
+                }
+            }
+        }
+    
+    }
+}

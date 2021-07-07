@@ -1,0 +1,33 @@
+.about {
+    margin: 0 auto;
+    // align-self: center;
+    width: 100%;    
+    .heading {
+        font-family: $font-family-secondary;
+        .sayHi {
+            font-family: $font-family-primary;
+        }
+        .heading_name { font-size: 48px;text-transform: uppercase;}
+        .heading_Job {font-size: 18px;text-transform: uppercase;}
+    }
+    .social-link {
+        li {
+            display: inline-block;
+            font-size: 24px;
+            margin: 15px;
+            a {
+                
+                color: $dark;
+            }
+        }
+    }
+    .downloadResume {
+        a {
+            padding: 12px 50px;
+            font-size: 16px;
+        }
+    }
+    .portfolio_section__img {
+    
+    }
+}
