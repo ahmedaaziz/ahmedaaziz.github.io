@@ -56,3 +56,22 @@ html {
 }
 
 @import 'layout/projects';
+
+
+@media only screen and (max-width:768px){
+  .swiper-slide {
+    height: 100% !important;
+  }
+
+  .services {
+    .service {
+      min-height:unset !important;
+      .service-content {
+        p {
+          // line-height: 0;
+        }
+
+      }
+    }
+  }
+}
