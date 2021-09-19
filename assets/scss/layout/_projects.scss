@@ -22,10 +22,11 @@
 
     .project-card {
         overflow: hidden;
-        border-radius: 25px;
+        border-radius: 3px;
         position: relative;
         transition: 0.3s ease-in-out;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
+        border: 1px solid #adaaa4;
 
         .project-info {
             position: absolute;

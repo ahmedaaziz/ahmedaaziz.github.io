@@ -10,7 +10,8 @@ body, html{
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #F5F1EB;
+      // background: #F5F1EB;
+      background: $white;
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -29,13 +30,14 @@ body, html{
 
     .swiper-wrapper {
         box-sizing: border-box;
+        
     }
 
     .swiper-slide {
         width: 100%;
         align-self: center;
-        overflow:hidden;
-        height: 100%;
+        // overflow:hidden;
+        // height: 100%;
     }
 
 

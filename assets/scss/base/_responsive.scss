@@ -1,0 +1,48 @@
+@media only screen and (max-width:768px){
+    .project-card {
+        // min-height:150px !important;
+
+    }
+    .swiper-slide {
+      height: 100% !important;
+    }
+  
+    .services {
+      .service {
+        min-height:150px !important;
+        
+        .service-content {
+          p {
+            // line-height: 0;
+          }
+  
+        }
+      }
+    }
+  
+    .brief {
+      .brief_head {
+          font-size: 18px;
+          text-align: center;
+          margin: 15px;
+      }
+      .brief_text {
+          p {
+              line-height: 38px;
+              font-size: 14px;
+          }
+      }
+  }
+  
+  .recent-work {
+      .project-card {
+          height: 120px !important;
+          img {
+            object-fit: contain;
+            height: 12.5rem;
+          }
+      }
+  }
+  
+  
+  }

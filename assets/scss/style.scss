@@ -1,17 +1,17 @@
 @charset 'UTF-8';
 
+@import 'vendor/normalize';
 @import "variables";
 
 @import 'base/fonts';
 @import 'base/mixins';
 
 // Vendors
-@import 'vendor/normalize';
 @import 'vendor/swiper';
 
 @import "typography";
 
-@import 'base/grid';
+// @import 'base/grid';
 @import 'base/helpers';
 @import 'base/buttons';
 @import 'base/forms';
@@ -27,4 +27,8 @@
 @import 'components/about';
 @import 'components/brief';
 @import 'components/services';
+
+
+
+@import "base/responsive";
 

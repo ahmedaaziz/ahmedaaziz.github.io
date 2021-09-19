@@ -34,11 +34,13 @@ html {
     
   }
   .section {
-    
+    margin-top: -30px !important;
+    overflow: hidden;
     // height: 100vh;
   }
   body {
-    background: $body-bg;
+    background: $white;
+    // background: $body-bg;
     color: $dark;
     font-family: $font-family-primary; // lato
     font-size: $font-size-base;
@@ -58,20 +60,3 @@ html {
 @import 'layout/projects';
 
 
-@media only screen and (max-width:768px){
-  .swiper-slide {
-    height: 100% !important;
-  }
-
-  .services {
-    .service {
-      min-height:unset !important;
-      .service-content {
-        p {
-          // line-height: 0;
-        }
-
-      }
-    }
-  }
-}

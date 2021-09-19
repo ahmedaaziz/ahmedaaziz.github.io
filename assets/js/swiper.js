@@ -7,6 +7,7 @@ var mySwiper = new Swiper(".swiper-container", {
   parallax: true,
   autoplay: false,
   effect: "slide",
+  centeredSlides: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
