@@ -13,7 +13,9 @@
         
         .service-content {
           p {
-            // line-height: 0;
+            font-size: 14px!important;
+            line-height: 23px;
+              // line-height: 0;
           }
   
         }
@@ -22,14 +24,14 @@
   
     .brief {
       .brief_head {
-          font-size: 18px;
+          font-size: 18px!important;
           text-align: center;
           margin: 15px;
       }
       .brief_text {
           p {
-              line-height: 38px;
-              font-size: 14px;
+              line-height: 38px!important;
+              font-size: 14px!important;
           }
       }
   }

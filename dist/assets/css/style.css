@@ -696,7 +696,7 @@ header nav .navbar-nav .nav-item .nav-link {
 
 .brief .brief_text p {
   line-height: 38px;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .services h1 {
   margin: 15px 0; }
@@ -709,25 +709,28 @@ header nav .navbar-nav .nav-item .nav-link {
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4); }
 
 .services .service h3 {
-  font-size: 1.5rem; }
+  font-size: 24px; }
 
 .services .service p {
-  font-size: 1.3rem;
+  font-size: 16px;
   color: #000;
-  line-height: 1.5; }
+  line-height: 30px; }
 
 @media only screen and (max-width: 768px) {
   .swiper-slide {
     height: 100% !important; }
   .services .service {
     min-height: 150px !important; }
+  .services .service .service-content p {
+    font-size: 14px !important;
+    line-height: 23px; }
   .brief .brief_head {
-    font-size: 18px;
+    font-size: 18px !important;
     text-align: center;
     margin: 15px; }
   .brief .brief_text p {
-    line-height: 38px;
-    font-size: 14px; }
+    line-height: 38px !important;
+    font-size: 14px !important; }
   .recent-work .project-card {
     height: 120px !important; }
   .recent-work .project-card img {
