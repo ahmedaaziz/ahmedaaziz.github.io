@@ -40,8 +40,8 @@
       .project-card {
           height: 120px !important;
           img {
-            object-fit: contain;
-            height: 12.5rem;
+            object-fit: cover;
+            // height: 12.5rem;
           }
       }
   }
